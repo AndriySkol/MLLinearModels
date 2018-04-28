@@ -1,0 +1,3 @@
+asserting
+model
+	^ model.

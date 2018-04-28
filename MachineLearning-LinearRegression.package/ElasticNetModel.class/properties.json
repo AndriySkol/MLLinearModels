@@ -1,0 +1,24 @@
+{
+	"classtraitcomposition" : "TElasticPathNumerical classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"alpha",
+		"maxIter",
+		"tol",
+		"selection",
+		"l1Ratio",
+		"gap",
+		"nIters",
+		"precomputed",
+		"xTx",
+		"xTy"
+	],
+	"name" : "ElasticNetModel",
+	"commentStamp" : "AndriiSkolotianyi 3/27/2018 16:00",
+	"super" : "LinearModel",
+	"traitcomposition" : "TElasticPathNumerical",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "MachineLearning-LinearRegression"
+}

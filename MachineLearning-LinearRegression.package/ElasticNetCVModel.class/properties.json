@@ -1,0 +1,26 @@
+{
+	"classtraitcomposition" : "TElasticPathNumerical classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"maxIter",
+		"tol",
+		"selection",
+		"l1Ratios",
+		"alphas",
+		"nAlphas",
+		"epsilon",
+		"mses",
+		"minMse",
+		"minL1",
+		"minAlpha",
+		"alphaGrid"
+	],
+	"name" : "ElasticNetCVModel",
+	"commentStamp" : "",
+	"super" : "LinearModelCV",
+	"traitcomposition" : "TElasticPathNumerical",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "MachineLearning-LinearRegression"
+}
