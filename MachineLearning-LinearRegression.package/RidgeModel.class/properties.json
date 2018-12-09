@@ -7,7 +7,7 @@
 		"method",
 		"tempalpha"
 	],
-	"name" : "BaseRidgeModel",
+	"name" : "RidgeModel",
 	"commentStamp" : "AndriiSkolotianyi 3/30/2018 13:53",
 	"super" : "LinearModel",
 	"traitcomposition" : "TRidgeNumerical",

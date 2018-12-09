@@ -63,6 +63,7 @@ fit: x to: y checkInput: check
 		].
 	
 	model := ElasticNetModel createWithAlpha: minAlpha maxIter: maxIter tol: tol selection: 'cyclic' l1Ratio: minL1. 
+	model shouldNormalize: self shouldNormalize.
 	model fit: x to: y checkInput: check.
 		
 		 

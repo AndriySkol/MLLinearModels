@@ -1,7 +1,7 @@
 helpers
 pathResidualsPrecomputed: alphaPath l1Ratio: l1Ratio trainxTx: xTx trainxTy: xTy preprocessTrainX: pX preprocessTrainY: pY testX: testX testY: testY
 	"comment stating purpose of message"
-	| l1mses lastCoef |
+	| l1mses lastCoef rescaledCoefs |
 	lastCoef := Array new: xTx numberOfRows withAll: 0.
 	l1mses := alphaPath collect: [ :alpha | | pathRes prediction mse |
 		pathRes := self pathInputPrecomputedxTx: xTx 
@@ -14,9 +14,9 @@ pathResidualsPrecomputed: alphaPath l1Ratio: l1Ratio trainxTx: xTx trainxTy: xTy
 			maxIter: maxIter. 
 			
 		lastCoef := pathRes coefs.
-		
+		rescaledCoefs := lastCoef * (alpha * (1 - l1Ratio) + 1).
 		prediction := self predictX: testX 
-			coefs: pathRes coefs  
+			coefs: rescaledCoefs 
 			xScale: pX xScale 
 			xOffset: pX xOffset  
 			yOffset: pY yOffset.

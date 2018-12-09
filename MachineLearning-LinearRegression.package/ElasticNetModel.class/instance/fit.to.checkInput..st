@@ -34,8 +34,8 @@ fit: x to: y checkInput: check
 			tol: tol coefs: (Array new: x numberOfColumns withAll: 0)
 			maxIter: maxIter. 
 		 ].
-	
-	coefs := pathRes coefs.
+
+	coefs := (alpha * (1 - l1Ratio) + 1) * pathRes coefs.
 	gap := pathRes gap.
 	nIters := pathRes iters.
 	self fitIntercept.

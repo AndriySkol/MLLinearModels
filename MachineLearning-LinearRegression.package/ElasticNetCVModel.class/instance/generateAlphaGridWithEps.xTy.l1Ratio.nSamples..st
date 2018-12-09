@@ -2,7 +2,7 @@ helpers
 generateAlphaGridWithEps: eps xTy: xTy l1Ratio: l1Ratio nSamples: nSamples
 	"works only for single output"
 	| maxAlpha logSpaceStart logSpaceStop step |
-	
+
 	l1Ratio = 0 ifTrue: [ 
 		^ nil.
 		 ].

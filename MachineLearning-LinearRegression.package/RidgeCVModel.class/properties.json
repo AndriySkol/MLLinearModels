@@ -1,19 +1,18 @@
 {
-	"commentStamp" : "",
-	"super" : "LinearModelCV",
-	"category" : "MachineLearning-LinearRegression",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TRidgeNumerical classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"alpha",
-		"maxIter",
-		"tol",
-		"selection",
-		"l1Ratio",
-		"gap",
-		"nIters"
+		"alphas",
+		"mses",
+		"minMse",
+		"minAlpha"
 	],
 	"name" : "RidgeCVModel",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "LinearModelCV",
+	"traitcomposition" : "TRidgeNumerical",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "MachineLearning-LinearRegression"
 }
