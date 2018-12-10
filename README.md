@@ -13,8 +13,9 @@ Both "RidgeModel" and "ElasticNetModel" provide:
 * `score: X output: y`- evaluates R2 coeficient error of prediction, if y is a vector of true values
 
 ### Installation
-In order to use this library, Polymath project is required to install. https://github.com/PolyMathOrg/PolyMath
-In addition, DataFrame library is highly suggested (though not necessary) to manipulate data https://github.com/PolyMathOrg/DataFrame
+In order to use this library, Polymath project is required to install https://github.com/PolyMathOrg/PolyMath.
+In addition, DataFrame library is highly suggested (though not necessary) to manipulate data https://github.com/PolyMathOrg/DataFrame.
+Afterwards library can simply be loaded from git repository using iceberg.
 
 ### Loading data for the tutorial
 We will load housing data and split it into train and test sets
