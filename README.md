@@ -81,6 +81,9 @@ ridgeCV := RidgeCVModel new
     shouldCenter: true;
     shouldNormalize: true;
     alphas: {1e-3 . 5e-3 . 1e-2 . 3e-2 . 5e-2 . 7e-2 . 1e-1 . 3e-1 .  5e-1. 1 . 5 . 10 . 20}.
+    
+ridgeCV fit: trainXMatrix to: trainYVec checkInput: true.
+ridgeCV model score: testXMatrix output: testYVec.
 ```
     
 ### Using ElasticModelCV
