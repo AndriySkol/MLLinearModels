@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ConfigurationOfMLLinearModels",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"LastVersionLoad"
+	],
+	"instvars" : [
+		"project"
+	],
+	"name" : "ConfigurationOfMLLinearModels",
+	"type" : "normal"
+}
