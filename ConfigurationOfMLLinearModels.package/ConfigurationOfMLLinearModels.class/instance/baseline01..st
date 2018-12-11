@@ -4,7 +4,7 @@ baseline01: spec
 
   spec for: #common do: [  
     spec blessing: #baseline.
-    spec repository: 'http://https://github.com/AndriySkol/MLLinearModels'.
+    spec repository: 'github://AndriySkol/MLLinearModels'.
     spec
       package: 'Machine-Learning-LinearRegression' with: [
 		spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
