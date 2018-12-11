@@ -4,13 +4,18 @@ baseline: spec
 	spec
 		for: #common
 		do: [
+			spec
+				project: 'PolyMath' with: [  
 					spec
     						baseline: 'PolyMath'
     						with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src' ].
- 
+				].
+ 			spec 
+				project: 'PolyMath' with: [  
     					spec
 						baseline: 'DataFrame'
 						with: [ spec repository: 'github://PolyMathOrg/DataFrame:master/src' ].	
+					].
 				"Packages"
 				spec
      					 package: 'Machine-Learning-LinearRegression' with: [
