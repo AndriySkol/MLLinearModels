@@ -10,9 +10,7 @@ baseline: spec
  
     					spec
 						baseline: 'DataFrame'
-						with: [ spec repository: 'github://PolyMathOrg/DataFrame';
-						 			 version: #development 
-						].	
+						with: [ spec repository: 'github://PolyMathOrg/DataFrame:master/src' ].	
 				"Packages"
 				spec
      					 package: 'Machine-Learning-LinearRegression' with: [
