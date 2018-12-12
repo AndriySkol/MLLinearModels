@@ -5,17 +5,15 @@ baseline: spec
 		for: #common
 		do: [
 			spec
-				project: 'PolyMath' with: [  
-					spec
-    						className: 'BaselineOfPolyMath';
-    						repository: 'github://PolyMathOrg/PolyMath:master/src' .
-				].
+    				baseline: 'PolyMath'
+    				with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src' ];
+				import: 'PolyMath'.
  			spec 
-				project: 'DataFrame' with: [  
+				baseline: 'DataFrame' with: [  
     					spec
-						className:  'BaselineOfDataFrame';
 						repository: 'github://PolyMathOrg/DataFrame:master/src'.	
-					].
+					];
+				import: 'DataFrame'.
 				"Packages"
 				spec
      					 package: 'Machine-Learning-LinearRegression' with: [
