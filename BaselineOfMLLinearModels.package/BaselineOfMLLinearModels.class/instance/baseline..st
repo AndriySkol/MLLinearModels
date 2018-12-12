@@ -16,7 +16,7 @@ baseline: spec
 				import: 'DataFrame'."
 				"Packages"
 				spec
-     					 package: 'MachineLearning-LinearRegression' with: [
+     					 package: 'MachineLearning-LinearRegression'with: [
 						spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
 											'MachineLearningPreprocessing'  "'DataFrame'")
 						];
@@ -35,7 +35,7 @@ baseline: spec
 
 				"Groups"
 				spec
-					group: 'LinearModels' with: #('Machine-Learning-LinearRegression');
+					group: 'LinearModels' with: #('MachineLearning-LinearRegression');
 					group: 'Math' with: #('MachineLearning-Math');
 					group: 'CrossValidation' with: #('MachineLearning-CrossValidation');
 					group: 'Preprocessing' with: #('MachineLearning-Preprocessing');
