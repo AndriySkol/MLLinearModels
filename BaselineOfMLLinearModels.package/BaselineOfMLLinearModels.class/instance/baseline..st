@@ -11,7 +11,7 @@ baseline: spec
  			spec 
 				baseline: 'DataFrame' with: [  
     					spec
-						repository: 'github://PolyMathOrg/DataFrame:master/src'.	
+						repository: 'github://PolyMathOrg/DataFrame'.	
 					];
 				import: 'DataFrame'.
 				"Packages"
