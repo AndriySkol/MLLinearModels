@@ -8,12 +8,12 @@ baseline: spec
     				baseline: 'PolyMath'
     				with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src' ];
 				import: 'PolyMath'.
- 			spec 
+ 			"spec 
 				baseline: 'DataFrame' with: [  
     					spec
 						repository: 'github://PolyMathOrg/DataFrame'.	
 					];
-				import: 'DataFrame'.
+				import: 'DataFrame'."
 				"Packages"
 				spec
      					 package: 'Machine-Learning-LinearRegression' with: [
