@@ -18,7 +18,7 @@ baseline: spec
 				spec
      					 package: 'Machine-Learning-LinearRegression' with: [
 						spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
-											'MachineLearningPreprocessing'  'DataFrame')
+											'MachineLearningPreprocessing'  "'DataFrame'")
 						];
 					package: 'MachineLearning-Math' with: [
 						spec requires: 'Polymath'
