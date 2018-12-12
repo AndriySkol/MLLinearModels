@@ -7,14 +7,14 @@ baseline: spec
 			spec
 				project: 'PolyMath' with: [  
 					spec
-    						baseline: 'PolyMath'
-    						with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src' ].
+    						baseline: 'PolyMath';
+    						repository: 'github://PolyMathOrg/PolyMath:master/src' .
 				].
  			spec 
 				project: 'DataFrame' with: [  
     					spec
-						baseline: 'DataFrame'
-						with: [ spec repository: 'github://PolyMathOrg/DataFrame:master/src' ].	
+						baseline: 'DataFrame';
+						repository: 'github://PolyMathOrg/DataFrame:master/src'.	
 					].
 				"Packages"
 				spec
