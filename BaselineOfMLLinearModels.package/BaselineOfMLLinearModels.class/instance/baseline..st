@@ -15,10 +15,7 @@ baseline: spec
 				import: 'DataFrame'."
 				"Packages"
 				spec
-     					package: 'MachineLearning-LinearRegression' with: [
-						spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
-											'MachineLearningPreprocessing'  "'DataFrame'")
-						];
+     					
 					package: 'MachineLearning-Math' with: [
 						spec requires: #('Polymath')
 						];
@@ -28,6 +25,10 @@ baseline: spec
 					package: 'MachineLearningPreprocessing'  with: [
 						spec requires: #('Polymath')
 						];
+					"package: 'MachineLearning-LinearRegression' with: [
+						spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
+											'MachineLearningPreprocessing'  'DataFrame')
+						];"
 					package: 'MachineLearning-Tests' with: [ 
 						spec requires: #('MachineLearning-LinearRegression')
 		 				].
