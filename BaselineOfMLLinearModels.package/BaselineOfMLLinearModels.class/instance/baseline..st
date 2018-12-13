@@ -6,7 +6,8 @@ baseline: spec
 		do: [
 			spec
     				baseline: 'PolyMath'
-    				with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src'].
+    				with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src'];
+					import: 'PolyMath'.
  			"spec 
 				baseline: 'DataFrame' with: [  
     					spec
