@@ -6,8 +6,7 @@ baseline: spec
 		do: [
 			spec
     				baseline: 'PolyMath'
-    				with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src' ];
-				import: 'PolyMath'.
+    				with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src'].
  			"spec 
 				baseline: 'DataFrame' with: [  
     					spec
@@ -16,21 +15,21 @@ baseline: spec
 				import: 'DataFrame'."
 				"Packages"
 				spec
-     					 package: 'MachineLearning-LinearRegression'with: [
+     					package: 'MachineLearning-LinearRegression' with: [
 						spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
 											'MachineLearningPreprocessing'  "'DataFrame'")
 						];
 					package: 'MachineLearning-Math' with: [
-						spec requires: 'Polymath'
+						spec requires: #('Polymath')
 						];
 					package: 'MachineLearning-CrossValidation' with: [
-						spec requires: 'Polymath'
+						spec requires: #('Polymath')
 						];
 					package: 'MachineLearningPreprocessing'  with: [
-						spec requires: 'Polymath'
+						spec requires: #('Polymath')
 						];
 					package: 'MachineLearning-Tests' with: [ 
-						spec requires: 'MachineLearning-LinearRegression'
+						spec requires: #('MachineLearning-LinearRegression')
 		 				].
 
 				"Groups"
