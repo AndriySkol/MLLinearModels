@@ -24,21 +24,21 @@ baseline: spec
 						];
 					package: 'MachineLearningPreprocessing'  with: [
 						spec requires: #('Polymath')
-						];
+						]
 					"package: 'MachineLearning-LinearRegression' with: [
 						spec requires: #('MachineLearning-Math' 'MachineLearning-CrossValidation' 
 											'MachineLearningPreprocessing'  'DataFrame')
 						];"
-					package: 'MachineLearning-Tests' with: [ 
+					"package: 'MachineLearning-Tests' with: [ 
 						spec requires: #('MachineLearning-LinearRegression')
-		 				].
+		 				]".
 
-				"Groups"
+
 				spec
-					group: 'LinearModels' with: #('MachineLearning-LinearRegression');
+					"group: 'LinearModels' with: #('MachineLearning-LinearRegression');"
 					group: 'Math' with: #('MachineLearning-Math');
 					group: 'CrossValidation' with: #('MachineLearning-CrossValidation');
 					group: 'Preprocessing' with: #('MachineLearning-Preprocessing');
-					group: 'Tests' with: #('MachineLearning-Tests');
-					group: 'all' with: #('Tests');
-					group: 'default' with: #('all') ].
+					"group: 'Tests' with: #('MachineLearning-Tests');
+					group: 'all' with: #('Tests');"
+					group: 'default' with: #('Math') ].
